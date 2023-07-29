@@ -1,0 +1,360 @@
+* {
+    margin: 10px;
+    padding: 0px;
+    background-attachment: scroll;
+
+}
+
+:root {
+    --navbar-height: 6px;
+}
+
+/*Navigation bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+
+/* Navigation bar: Logo and Image*/
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 70px;
+    margin: 3px 6px;
+}
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgba(224, 112, 112, 0.982);
+    background: url(Img/1.png)no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#navbar ul li {
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: flow-root;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: solid;
+    font-size: larger;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+/* Home section */
+#home {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 130px 100px;
+    height: 260px;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(Img/bg10.jpg)no-repeat center center/cover;
+    height: 100%;
+    width: 90%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+#home p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+/*Event Section*/
+
+section.Events-container {
+    background-color: beige;
+    /*border-style:double;
+    border-color:rgb(245, 233, 219);*/
+}
+
+#Events {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#Events .box {
+    border: 5px solid rgb(240, 232, 210);
+    border-style: double;
+    padding: 23px;
+    margin: 10px 180px;
+    border-radius: 1px;
+    background-color: rgb(243 217 217);
+
+}
+
+#Events .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+
+}
+
+#Events .box p {
+    font-family: cursive;
+    color: rgb(88, 79, 64);
+
+}
+
+#aboutus {
+    margin: 40px;
+    display: block;
+    font-family: cursive;
+    color: rgb(88, 79, 64);
+}
+
+#aboutus ul {
+    display: flex;
+    justify-content: center;
+}
+
+div#Gallery {
+    background-color: rgb(225 194 194 / 10%);
+}
+
+#Gallery img {
+    padding: 3px;
+    height: 190px;
+    margin: 5px 5px;
+}
+
+#GalleryBudget img {
+    padding: 0px;
+    height: 150px;
+    margin: 13px 3px;
+    border: 3px;
+    border-style: groove;
+    border-color: #a944429e;
+}
+
+/*Utility Classes*/
+.h-primary {
+    font-size: 3.4rem;
+    padding: 12px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.h2-primary {
+    font-size: 3rem;
+    padding-top: 17px;
+    color: #b24d57;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.h2-secondary {
+    font-size: 3rem;
+    padding-top: 17px;
+    color: #000000;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.h-secondory {
+    font-size: 2.0rem;
+    padding: 12px;
+    color: rgb(122 32 49 / 87%);
+    font-family: 'Berkshire Swash', cursive;
+
+}
+.container {
+    display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.strong1{
+    font-size: 2.5rem !important;
+    font-family: monospace !important;
+    font-weight: 700 !important;
+    color: rgba(0, 0, 0, 0.642) !important;
+}
+.strong2 {
+    font-size: 2.7rem !important;
+    font-family: monospace !important;
+    font-weight: 700 !important;
+    color: #585455 !important;
+}
+.strong3{
+    font-size: 1.3rem;
+    font-family: monospace;
+    font-weight: 550;
+    MARGIN: 0px;
+    color: rgba(79, 74, 74, 0.628);
+}
+
+.h-third {
+    font-size: 1.3rem;
+    padding: 11px;
+    margin-top: 10px;
+    color: rgb(122 32 49 / 87%);
+    font-family: 'Berkshire Swash', cursive;
+
+}
+
+.h-fourth {
+    font-size: 1.2rem;
+    padding: 2px;
+    color: rgb(122 32 49 / 87%);
+    font-family: 'Berkshire Swash', cursive;
+
+}
+
+b,
+strong {
+    font-weight: 700;
+    color: #b24d57;
+}
+
+.linkcolor {
+    color: rgb(122 32 49 / 87%);
+}
+
+.center {
+    text-align: center;
+}
+
+/*contact Section*/
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url(Img/1.png) no-repeat center center/cover;
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-style: none;
+
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 50%;
+}
+
+#contact-box label {
+    font-size: 1.2rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+/*Services Section*/
+#Services {
+    margin: 20px 120px;
+    display: flex;
+    justify-content: center;
+}
+
+#Services .box {
+    border: 5px solid rgb(240, 232, 210);
+    border-style: double;
+    padding: 34px;
+    margin: 10px 10px;
+    border-radius: 0px;
+    background-color: rgba(241, 212, 212, 0.875);
+}
+
+#Services .box img {
+    height: 50px;
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+}
+
+#Services .box p {
+    font-family: cursive;
+    color: rgb(88, 79, 64);
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.column {
+    float: left;
+    justify-content: flex-start;
+    margin: 0;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.477);
+}

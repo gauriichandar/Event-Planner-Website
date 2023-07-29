@@ -1,0 +1,40 @@
+
+/*Event Section*/
+
+section.Events-container {
+    background-color: beige;
+    /*border-style:double;
+    border-color:rgb(245, 233, 219);*/
+}
+
+#Events {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#Events .box {
+    border: 5px solid rgb(240, 232, 210);
+    border-style: double;
+    padding: 23px;
+    margin: 10px 180px;
+    border-radius: 1px;
+    background-color: rgb(243 217 217);
+
+}
+
+#Events .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+
+}
+
+#Events .box p {
+    font-family: cursive;
+    color: rgb(88, 79, 64);
+
+}
+
